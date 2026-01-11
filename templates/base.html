@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureAI | Automate Construction Accounting</title>
+    
+    <!-- Google Fonts: Space Mono for that 'Upscale Concrete' tech vibe -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS (CDN for prototype speed) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- HTMX -->
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        mono: ['"Space Mono"', 'monospace'],
+                    },
+                    colors: {
+                        concrete: {
+                            50: '#f9fafb',
+                            100: '#f3f4f6',
+                            200: '#e5e7eb',
+                            300: '#d1d5db',
+                            400: '#9ca3af',
+                            500: '#6b7280',
+                            600: '#4b5563',
+                            700: '#374151',
+                            800: '#1f2937',
+                            900: '#111827',
+                            950: '#030712',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Space Mono', monospace;
+        }
+    </style>
+</head>
+<body class="bg-concrete-50 text-concrete-900 flex flex-col min-h-screen selection:bg-concrete-900 selection:text-concrete-50">
+
+    <!-- Navigation -->
+    <nav class="border-b-2 border-concrete-200 bg-white sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex">
+                    <a href="/" hx-boost="true" class="flex-shrink-0 flex items-center font-bold text-2xl tracking-tighter">
+                        FUTURE<span class="text-concrete-400">AI</span>
+                    </a>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="/pricing" hx-boost="true" class="text-sm font-bold text-concrete-600 hover:text-concrete-900 hover:underline decoration-2">PRICING</a>
+                    <a href="/case-studies" hx-boost="true" class="text-sm font-bold text-concrete-600 hover:text-concrete-900 hover:underline decoration-2">CASE STUDIES</a>
+                    <a href="#contact" class="bg-concrete-900 text-white px-5 py-2 text-sm font-bold shadow-sm hover:bg-concrete-700 transition-colors">BOOK CALL</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-concrete-100 border-t-2 border-concrete-200 mt-20">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <span class="block text-lg font-bold">FUTURE<span class="text-concrete-400">AI</span></span>
+                    <p class="mt-2 text-sm text-concrete-500 max-w-xs">
+                        Automating accounting infrastructure for American construction developers.
+                    </p>
+                </div>
+                <div class="flex justify-end space-x-6 text-sm text-concrete-500">
+                    <div>© 2026 FutureAI Inc.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

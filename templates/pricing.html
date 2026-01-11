@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="bg-concrete-50 py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-4xl text-center">
+            <h2 class="text-base font-semibold leading-7 text-concrete-600">CAPITAL ALLOCATION</h2>
+            <p class="mt-2 text-4xl font-bold tracking-tight text-concrete-900 sm:text-5xl">INVESTMENT TIERS</p>
+        </div>
+        <div
+            class="isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:gap-x-12">
+
+            <!-- Tier 1 -->
+            <div class="bg-white border-2 border-concrete-200 p-8 sm:p-10">
+                <h3 id="tier-developer" class="text-lg font-bold leading-8 tracking-tight text-concrete-900">DEVELOPER
+                </h3>
+                <p class="mt-4 text-sm leading-6 text-concrete-600">For mid-sized firms ($50M - $200M annual volume).
+                </p>
+                <p class="mt-6 flex items-baseline gap-x-1">
+                    <span class="text-4xl font-bold tracking-tight text-concrete-900">$5,000</span>
+                    <span class="text-sm font-semibold leading-6 text-concrete-600">/month</span>
+                </p>
+                <ul role="list"
+                    class="mt-8 space-y-3 text-sm leading-6 text-concrete-600 border-t border-concrete-200 pt-8">
+                    <li class="flex gap-x-3"><span class="text-concrete-900 font-bold">✓</span> Automated AP Processing
+                    </li>
+                    <li class="flex gap-x-3"><span class="text-concrete-900 font-bold">✓</span> 5 Active Projects</li>
+                    <li class="flex gap-x-3"><span class="text-concrete-900 font-bold">✓</span> Weekly Variance Reports
+                    </li>
+                    <li class="flex gap-x-3"><span class="text-concrete-900 font-bold">✓</span> Standard Integrations
+                        (Sage 300, Procore)</li>
+                </ul>
+                <a href="/#contact" aria-describedby="tier-developer"
+                    class="mt-8 block w-full bg-concrete-100 py-3 px-3 text-center text-sm font-bold text-concrete-900 hover:bg-concrete-200 border border-concrete-300">Start
+                    Trial</a>
+            </div>
+
+            <!-- Tier 2 -->
+            <div class="bg-concrete-900 text-white p-8 sm:p-10 border-2 border-concrete-900 shadow-2xl relative">
+                <div
+                    class="absolute top-0 right-0 -mt-4 -mr-4 bg-concrete-200 text-concrete-900 px-3 py-1 font-bold text-xs border border-concrete-900 shadow-sm">
+                    RECOMMENDED
+                </div>
+                <h3 id="tier-enterprise" class="text-lg font-bold leading-8 tracking-tight text-white">ENTERPRISE</h3>
+                <p class="mt-4 text-sm leading-6 text-concrete-300">For institutional developers ($200M+ volume).</p>
+                <p class="mt-6 flex items-baseline gap-x-1">
+                    <span class="text-4xl font-bold tracking-tight text-white">CUSTOM</span>
+                </p>
+                <ul role="list"
+                    class="mt-8 space-y-3 text-sm leading-6 text-concrete-300 border-t border-concrete-700 pt-8">
+                    <li class="flex gap-x-3"><span class="text-white font-bold">✓</span> Unlimited Projects</li>
+                    <li class="flex gap-x-3"><span class="text-white font-bold">✓</span> Custom Agent Workflows</li>
+                    <li class="flex gap-x-3"><span class="text-white font-bold">✓</span> Real-time ERP Bi-directional
+                        Sync</li>
+                    <li class="flex gap-x-3"><span class="text-white font-bold">✓</span> Dedicated Solutions Architect
+                    </li>
+                </ul>
+                <a href="/#contact" aria-describedby="tier-enterprise"
+                    class="mt-8 block w-full bg-white py-3 px-3 text-center text-sm font-bold text-concrete-900 hover:bg-concrete-100">Schedule
+                    Consult</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
