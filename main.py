@@ -24,6 +24,10 @@ async def pricing(request: Request):
 async def case_studies(request: Request):
     return templates.TemplateResponse("case_studies.html", {"request": request})
 
+@app.get("/about", response_class=HTMLResponse)
+async def about(request: Request):
+    return templates.TemplateResponse("about.html", {"request": request})
+
 @app.post("/contact")
 async def contact(request: Request):
     # In a real app, this would send an email or save to DB.
